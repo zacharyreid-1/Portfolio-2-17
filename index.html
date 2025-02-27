@@ -19,7 +19,7 @@
                 <div class="header_name">
                     <h1 class="name">Zachary Reid</h1>
                 </div>
-                <div class="header_links">
+                <nav class="header_links">
                     <div class="about_link">
                         <a href="index.html#about_sec" class="about">About</a>
                     </div>
@@ -35,7 +35,7 @@
                     <div class="contact_link">
                         <a href="index.html#contact_sec" class="contact">Contact</a>
                     </div>
-                </div>
+                </nav>
             </div>
         </header>
 
@@ -82,52 +82,111 @@
                 <div class="projects">
                     <div class="proj_one_card">
                         <div class="proj_one">
-                            <a href="" class="proj_one_link">
+                            <button class="proj_one_link" id="modalOneBtn">
                                 <img src="images/python_tree_img.png" alt="AI image of tree stump" class="proj_one_img" width="200" height="200">
-                            </a>
+                            </button>
                         </div>
                         <div class="proj_one_desc">
-                            <p class="proj_desc">Tree Age python script</p>
+                            <p class="proj_desc">Tree Age Python Script</p>
                         </div>
                     </div>
+
+                    <div id="modal-one" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 class="modal-header">Tree Age Python Script</h2>
+                            <p class="desc">This is a Python script which takes the circumference of a tree and approximates the age.</p>
+                            <p class="link">
+                                <a href="project_files/tree_circ.py" class="download-link" download>Download</a>
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="proj_two_card">
                         <div class="proj_two">
-                            <a href="" class="proj_two_link">
+                            <button class="proj_two_link" id="modalTwoBtn">
                                 <img src="images/python_temp_conv_img.png" alt="AI image of laptop with thermometer on it" class="proj_two_img" width="200" height="200">
-                            </a>
+                            </button>
                         </div>
                         <div class="proj_two_desc">
-                            <p class="proj_desc">Temp Convert script</p>
+                            <p class="proj_desc">Python Temperature Converter Script</p>
                         </div>
                     </div>
+
+                    <div id="modal-two" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 class="modal-header">Python Temperature Converter Script</h2>
+                            <p class="desc">This is a Python script which converts any inputted temperature and converts is to the users preferred temperature.</p>
+                            <p class="link">
+                                <a href="project_files/temp_conv.py" class="download-link" download>Download</a>
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="proj_three_card">
                         <div class="proj_three">
-                            <a href="" class="proj_three_link">
+                            <button class="proj_three_link" id="modalThreeBtn">
                                 <img src="images/html_computer_img.png" alt="" class="proj_three_img" width="200" height="200">
-                            </a>
+                            </button>
                         </div>
                         <div class="proj_three_desc">
                             <p class="proj_desc">Web-Dev Project</p>
                         </div>
                     </div>
+
+                    <div id="modal-three" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 class="modal-header">Web-Dev Projects</h2>
+                            <p class="desc">This will be an example of a web development project when it is completed.</p>
+                            <p class="link">
+                                <a href="###" class="download-link" download>Download</a>
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="proj_four_card">
                         <div class="proj_four">
-                            <a href="" class="proj_four_link">
-                                <img src="" alt="" class="proj_four_img">
-                            </a>
+                            <button class="proj_four_link" id="modalFourBtn">
+                                <img src="images/placeholder.jpg" alt="" class="proj_four_img" width="200" height="200">
+                            </button>
                         </div>
                         <div class="proj_four_desc">
                             <p class="proj_desc">Bootstrap Project</p>
                         </div>
                     </div>
+
+                    <div id="modal-four" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 class="modal-header">Boostrap Project</h2>
+                            <p class="desc">This will be an example of a bootstrap project when it is completed.</p>
+                            <p class="link">
+                                <a href="###" class="download-link" download>Download</a>
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="proj_five_card">
                         <div class="proj_five">
-                            <a href="" class="proj_five_link">
-                                <img src="" alt="" class="proj_five_img">
-                            </a>
+                            <button class="proj_five_link" id="modalFiveBtn">
+                                <img src="images/placeholder.jpg" alt="" class="proj_five_img" width="200" height="200">
+                            </button>
                         </div>
                         <div class="proj_five_desc">
-                            <p class="proj_desc">JS Project</p>
+                            <p class="proj_desc">JavaScript Project</p>
+                        </div>
+                    </div>
+
+                    <div id="modal-five" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 class="modal-header">Javascript Project</h2>
+                            <p class="desc">This will be an example of a JavaScript project when it is completed.</p>
+                            <p class="link">
+                                <a href="###" class="download-link" download>Download</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -187,7 +246,7 @@
         <footer>
             <div class="footer_content">
                 <div class="copyright_sec">
-                    <p class="copyright">&copy; Zachary Reid</p>
+                    <p class="copyright">&copy; Zachary Reid 2025</p>
                 </div>
                 <div class="footer_links">
                     <div class="linkedin">
@@ -203,6 +262,92 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+
+            var modalOne = document.getElementById('modal-one');
+            var btnOne = document.getElementById('modalOneBtn');
+            var spanOne = document.getElementsByClassName('close')[0];
+
+            var modalTwo = document.getElementById('modal-two');
+            var btnTwo = document.getElementById('modalTwoBtn');
+            var spanTwo = document.getElementsByClassName('close')[1];
+
+            var modalThree = document.getElementById('modal-three');
+            var btnThree = document.getElementById('modalThreeBtn');
+            var spanThree = document.getElementsByClassName('close')[2];
+
+            var modalFour = document.getElementById('modal-four');
+            var btnFour = document.getElementById('modalFourBtn');
+            var spanFour = document.getElementsByClassName('close')[3];
+
+            var modalFive = document.getElementById('modal-five');
+            var btnFive = document.getElementById('modalFiveBtn');
+            var spanFive = document.getElementsByClassName('close')[4];
+
+            
+            btnOne.onclick = function(){
+                modalOne.style.display = "block";
+            }
+            spanOne.onclick = function(){
+                modalOne.style.display = "none";
+            }
+
+
+            btnTwo.onclick = function(){
+                modalTwo.style.display = "block";
+            }
+            spanTwo.onclick = function(){
+                modalTwo.style.display = "none";
+            }
+
+
+            btnThree.onclick = function(){
+                modalThree.style.display = "block";
+            }
+            spanThree.onclick = function(){
+                modalThree.style.display = "none";
+            }
+
+
+            btnFour.onclick = function(){
+                modalFour.style.display = "block";
+            }
+            spanFour.onclick = function(){
+                modalFour.style.display = "none";
+            }
+
+
+            btnFive.onclick = function(){
+                modalFive.style.display = "block";
+            }
+            spanFive.onclick = function(){
+                modalFive.style.display = "none";
+            }
+
+
+
+
+            window.onclick = function(event){
+                if (event.target == modalOne){
+                    modalOne.style.display = "none";
+                }
+                else if (event.target == modalTwo){
+                    modalTwo.style.display = "none";
+                }
+                else if (event.target == modalThree){
+                    modalThree.style.display = "none";
+                }
+                else if (event.target == modalFour){
+                    modalFour.style.display = "none";
+                }
+                else if (event.target == modalFive){
+                    modalFive.style.display = "none";
+                }
+            }
+
+        </script>
+
     </body>
 
 </html>

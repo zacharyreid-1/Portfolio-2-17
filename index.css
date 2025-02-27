@@ -57,6 +57,17 @@ header{
     color: var(--secondary-color);
 }
 
+/* Hamburger Menu */
+.menu_toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
 /* body */
 
 /* About Section */
@@ -131,6 +142,69 @@ header{
 
 .projects img{
     border-radius: 15px;
+}
+
+.projects button{
+    border: none;
+    background-color: var(--secondary-color);
+}
+
+.projects button:hover{
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 75%;
+}
+
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header{
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.desc{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.download-link{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.download-link:hover{
+    font-size: 20.5px;
+    color: var(--extra-color);
+    cursor: pointer;
 }
 
 /* Skills Section */
@@ -212,36 +286,33 @@ input, textarea{
 }
 
 /* footer */
-footer {
+footer{
     background-color: var(--primary-color); /* Adjust color as needed */
     padding: 20px;
     margin-top: 10px;
 }
 
-.footer_content {
+.footer_content{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.copyright_sec {
+.copyright_sec{
     flex: 1;
 }
 
-.copyright {
+.copyright{
     margin: 0;
     padding-left: 20px; /* Adjust for spacing */
     font-size: 16px;
     color: var(--secondary-color);
 }
 
-.footer_links {
+.footer_links{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
 }
-
-
-
