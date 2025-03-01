@@ -53,20 +53,9 @@ header{
     justify-content: left;
 }
 
-.name{
+.head_name{
     color: var(--secondary-color);
 }
-
-/* Hamburger Menu */
-.menu_toggle{
-    display: none;
-    background: none;
-    border: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-}
-
 
 /* body */
 
@@ -94,14 +83,21 @@ header{
     margin-bottom: 20px;
 }
 
+.about_info{
+    font-size: 20px;
+    width: 50%;
+}
+
 .resume_link{
     text-decoration: none;
     color: var(--primary-color);
+    font-size: 20px;
 }
 
 .resume_link:hover{
     font-style: italic;
     color: var(--extra-color);
+    font-size: 20.5px;
 }
 
 /* Education Section */
@@ -114,6 +110,14 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-bkg-color);
+}
+
+.sec_title{
+    font-size: 24px;
+}
+
+.info{
+    font-size: 20px;
 }
 
 .edu_one{
@@ -243,17 +247,17 @@ header{
 }
 
 input{
-    width: 200px;
+    width: 300px;
     height: 50px;
     margin-bottom: 10px;
 }
 
 .email_in{
-    width: 420px;
+    width: 620px;
 }
 
 textarea{
-    width: 420px;
+    width: 620px;
     height: 200px;
 }
 

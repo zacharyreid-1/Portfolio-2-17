@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="index-media.css">
 
         <title>Portfolio</title>
     </head>
@@ -17,7 +18,7 @@
         <header>
             <div class="header_content">
                 <div class="header_name">
-                    <h1 class="name">Zachary Reid</h1>
+                    <h1 class="head_name">Zachary Reid</h1>
                 </div>
                 <nav class="header_links">
                     <div class="about_link">
@@ -42,15 +43,15 @@
         <main>
             <div class="about_sec" id="about_sec">
                 <div class="profile_pic">
-                    <img src="images/my_pic_cropped.jpg" alt="Image of myself" class="my_pic" width="200" height="200">
+                    <img src="images/my_pic_cropped.jpg" alt="Image of myself" class="my_pic" width="300" height="300">
                 </div>
 
                 <div class="about_info">
                     <div class="para_one">
-                        <p class="para">Hey! My name is Zach and I am a Junior Web <br> Developer. I specialize in Front-End Web Development <br> and I love what I do!</p>
+                        <p class="para">Hey! My name is Zach and I am a Junior Web Developer. I specialize in Front-End Web Development and I love what I do!</p>
                     </div>
                     <div class="para_two">
-                        <p class="para">I am currently pursuing my Bachelor&#39;s Degree in <br> Information Technology and plan to get my <br> Master&#39;s Degree right after.</p>
+                        <p class="para">I am currently pursuing my Bachelor&#39;s Degree in Information Technology and plan to get my Master&#39;s Degree right after.</p>
                     </div>
                     <div class="resume_sec">
                         <a href="images/Final_Resume_Zachary-Reid.pdf" class="resume_link" target="_blank">
@@ -87,7 +88,7 @@
                             </button>
                         </div>
                         <div class="proj_one_desc">
-                            <p class="proj_desc">Tree Age Python Script</p>
+                            <p class="proj_desc">Tree Age Script</p>
                         </div>
                     </div>
 
@@ -109,7 +110,7 @@
                             </button>
                         </div>
                         <div class="proj_two_desc">
-                            <p class="proj_desc">Python Temperature Converter Script</p>
+                            <p class="proj_desc">Temperature Script</p>
                         </div>
                     </div>
 
@@ -324,9 +325,6 @@
             spanFive.onclick = function(){
                 modalFive.style.display = "none";
             }
-
-
-
 
             window.onclick = function(event){
                 if (event.target == modalOne){
