@@ -111,7 +111,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 0px 10px;
-        gap: 10px;
+        row-gap: 10px;
+        column-gap: 30px;
     }
 
     .skill_four{
@@ -160,10 +161,6 @@
     }
 
     /* Footer */
-
-    footer{
-        
-    }
 
     .footer_content{
         display: grid;
