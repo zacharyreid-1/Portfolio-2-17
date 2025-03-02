@@ -14,6 +14,14 @@
     scroll-behavior: smooth;
 }
 
+.title{
+    font-size: 32px;
+}
+
+p{
+    font-size: 20px;
+}
+
 /* header */
 header{
     background-color: var(--primary-color);
@@ -84,8 +92,7 @@ header{
 }
 
 .about_info{
-    font-size: 20px;
-    width: 25%;
+    width: 50%;
 }
 
 .resume_link{
@@ -110,14 +117,6 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-bkg-color);
-}
-
-.sec_title{
-    font-size: 24px;
-}
-
-.info{
-    font-size: 20px;
 }
 
 .edu_one{
